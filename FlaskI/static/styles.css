@@ -1,0 +1,26 @@
+body {
+    background-image: url(https://img.freepik.com/premium-photo/closeup-mathematical-formula-elements-blackboard-school-background-elegant-luxury-3d-illustration-education-theme_510351-4711.jpg?w=2000);
+    background-size: cover;
+  }
+  /* header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 1em;
+  } */
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: lightblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

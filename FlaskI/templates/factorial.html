@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Factorial Calculator</title>
+    <style>
+      /* Add styling for header and body */
+      header {
+        background-color: rgba(51, 51, 51, 0.5); /* changed */
+        color: white;
+        text-align: center;
+        padding: 1em;
+      }
+      body {
+        background-image: url(https://img.freepik.com/premium-photo/closeup-mathematical-formula-elements-blackboard-school-background-elegant-luxury-3d-illustration-education-theme_510351-4711.jpg?w=2000);
+        background-size: cover;
+        padding: 2em;
+        text-align: center;
+      }
+      /* Add styling for input and submit button */
+      input[type="number"] {
+        padding: 0.5em;
+        font-size: 1.2em;
+        margin: 0.5em;
+      }
+      input[type="submit"] {
+        padding: 0.5em 1em;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 0.5em;
+        cursor: pointer;
+      }
+      /* Add styling for result */
+      .result {
+        background-color: #eee;
+        padding: 1em;
+        margin: 1em;
+        text-align: center;
+        border-radius: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Factorial Calculator</h1>
+    </header>
+    <main>
+      <form action="/factorial" method="post">
+        <input type="number" name="number" placeholder="Enter a number">
+        <input type="submit" value="Calculate">
+      </form>
+      {% if result %}
+        <div class="result">
+          <p>The factorial of {{ number }} is {{ result }}</p>
+        </div>
+      {% endif %}
+    </main>
+  </body>
+</html>
